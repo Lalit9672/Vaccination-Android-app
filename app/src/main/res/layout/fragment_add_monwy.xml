@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.Add_monwy">
+<LinearLayout
+    android:id="@+id/text"
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="#000000"
+        android:text="₹"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:id="@+id/money"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:hint="Amount to add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+</LinearLayout>
+   <Button
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/text"
+       android:text="Add"
+       android:id="@+id/add"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"></Button>
+
+</RelativeLayout>

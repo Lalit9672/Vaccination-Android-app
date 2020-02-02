@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wallet">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="50dp"
+        android:id="@+id/text"
+       android:layout_centerHorizontal="true"
+        android:text="My Wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/t"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/text"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/w"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></ImageView>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20dp"
+                android:text="₹"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/money"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/g"
+        android:layout_below="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            app:tabIndicatorColor="#000000"
+            app:tabTextColor="#4285F4"
+            app:tabSelectedTextColor="#00BFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/g"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</RelativeLayout>

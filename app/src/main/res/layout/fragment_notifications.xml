@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:hint="Today"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <androidx.cardview.widget.CardView
+
+android:id="@+id/c"        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/n"
+                android:defaultFocusHighlightEnabled="true"
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tee"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_centerInParent="true"
+                android:hint="today is vaccine"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/c"
+        android:textSize="30dp"
+        android:id="@+id/p"
+        android:hint="Yesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/ui"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/p"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/n"
+                android:defaultFocusHighlightEnabled="true"
+                android:id="@+id/imagep"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/teyee"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_centerInParent="true"
+                android:hint="Two Days are left"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imagep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/ui"
+        android:textSize="30dp"
+        android:id="@+id/pto"
+        android:hint="31-Feb-2020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/n"
+                android:defaultFocusHighlightEnabled="true"
+                android:id="@+id/imagepi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/teyyy"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_centerInParent="true"
+                android:hint="Three Days are left"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/imagepi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

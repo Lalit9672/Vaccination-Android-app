@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491480663215",
+    "firebase_url": "https://gaming-65e31.firebaseio.com",
+    "project_id": "gaming-65e31",
+    "storage_bucket": "gaming-65e31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491480663215:android:28888e2c421fa1eca7405a",
+        "android_client_info": {
+          "package_name": "com.example.gaming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491480663215-spbj8b7v6qmhln1bkodquedubl2oaeet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gaming",
+            "certificate_hash": "8c74add81a8347323fd26ee84d56f4e0880e7cdb"
+          }
+        },
+        {
+          "client_id": "491480663215-iv933n9l3j8e13dbqrhf9bti6lkikjsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSe_kP6eO8T2a9bpJbRFQDdqVwQj1vjxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491480663215-iv933n9l3j8e13dbqrhf9bti6lkikjsh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

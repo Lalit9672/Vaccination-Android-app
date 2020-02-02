@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="30dp"
+        android:hint="Today"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/n"
+                android:defaultFocusHighlightEnabled="true"
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/te"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_centerInParent="true"
+                android:hint="Four Days are left"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

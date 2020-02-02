@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP_VERi">
+    <TextView
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text"
+        android:text="Auto-verifing the OTP sent to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:textSize="20dp"
+        android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:id="@+id/number"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"
+        android:text="+918619549726"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+   <com.goodiebag.pinview.Pinview
+       android:layout_marginTop="30dp"
+       android:id="@+id/otp"
+       android:saveEnabled="false"
+       app:inputType="number"
+       app:pinHeight="45dp"
+       app:pinWidth="45dp"
+       app:password="false"
+       app:hint="0"
+          app:forceKeyboard="false"
+       app:pinLength="6"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></com.goodiebag.pinview.Pinview>
+<Button
+    android:id="@+id/verify"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:textColor="#000000"
+    android:text="Verifiy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></Button>
+</RelativeLayout>

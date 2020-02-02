@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile_frag">
+<ImageView
+    android:layout_marginTop="20dp"
+    android:id="@+id/pro"
+    android:src="@drawable/ic_account_circle_black_24dp"
+    android:layout_width="150dp"
+    android:layout_height="150dp"></ImageView>
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+      android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:textSize="20dp"
+    android:id="@+id/text"
+    android:text="Name:-"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Lalit"
+        android:layout_toRightOf="@+id/text"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+
+        android:textSize="20dp"
+        android:layout_below="@+id/text"
+        android:id="@+id/text1"
+        android:text="Age:-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:textColor="#000000"
+        android:hint="20"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/text1"
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/o"
+        android:layout_marginTop="30dp"
+        android:textColor="#aaafff"
+        android:textSize="30dp"
+android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pro"
+        android:text="List of Vaccination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+<androidx.cardview.widget.CardView
+    android:layout_below="@+id/o"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_below="@+id/o"
+           android:id="@+id/recyclerview"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+       </androidx.recyclerview.widget.RecyclerView>
+</androidx.cardview.widget.CardView>
+<Button
+    android:layout_centerHorizontal="true"
+    android:id="@+id/common"
+    android:text="Common Vaccine"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></Button>
+</RelativeLayout>
